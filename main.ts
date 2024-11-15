@@ -40,5 +40,5 @@ export default createPrompt<boolean, ConfirmConfig>((config, done) => {
     config.message ?? "Press Enter to continue...",
     status
   );
-  return `${prefix} ${message}`;
+  return `${prefix} ${message}` as string;
 });
