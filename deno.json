@@ -1,0 +1,14 @@
+{
+  "name": "@ruintd/inquirer-enter",
+  "version": "1.0.0",
+  "exports": "./main.ts",
+  "tasks": {
+    "dev": "deno run --watch main.ts"
+  },
+  "imports": {
+    "@inquirer/core": "npm:@inquirer/core@^10.1.0",
+    "@inquirer/figures": "npm:@inquirer/figures@^1.0.8",
+    "@inquirer/type": "npm:@inquirer/type@^3.0.1",
+    "@std/fmt": "jsr:@std/fmt@^1.0.3"
+  }
+}
