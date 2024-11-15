@@ -8,7 +8,7 @@ import {
   type Theme,
   type Status,
 } from "@inquirer/core";
-import type { PartialDeep } from "@inquirer/type";
+import type { PartialDeep, Prompt } from "@inquirer/type";
 import { blue, green } from "@std/fmt/colors";
 import figures from "@inquirer/figures";
 
@@ -40,5 +40,5 @@ export default createPrompt<boolean, ConfirmConfig>((config, done) => {
     config.message ?? "Press Enter to continue...",
     status
   );
-  return `${prefix} ${message}` as string;
-});
+  return `${prefix} ${message}`;
+}) as Prompt<boolean, ConfirmConfig>;
